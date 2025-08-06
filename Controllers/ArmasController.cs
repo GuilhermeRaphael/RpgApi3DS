@@ -20,7 +20,7 @@ namespace RpgApi.Controllers
             _context = context;
         }
 
-         [HttpGet("{id}")] //Buscar pelo id
+        [HttpGet("{id}")] //Buscar pelo id
         public async Task<IActionResult> GetSingle(int id)
         {
             try
@@ -96,7 +96,7 @@ namespace RpgApi.Controllers
                 return BadRequest(ex.Message + " - " + ex.InnerException);
             }
         }
-
+/*
         [HttpDelete("{id}")]
         public async Task<IActionResult> Delete(int id)
         {
@@ -114,5 +114,6 @@ namespace RpgApi.Controllers
                 return BadRequest(ex.Message + " - " + ex.InnerException);
             }
         }
+*/
     }
 }
